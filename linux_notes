@@ -8,21 +8,6 @@ clamscan -r --bell -i /
 clamscan -r /folder/to/scan | grep FOUND >> /path/to/save/report/file.txt
 
 -------------------------------------------------------------------------------------
--Systemd
--------------------------------------------------------------------------------------
-List the systemd units and jobs:
-systemctl list-units
-systemctl list-jobs
-
-Get status of a unit and start and enable or stop and disable:
-systemctl status unit 
-systemctl start unit
-systemctl enable unit 
-systemctl stop unit
-systemctl disable unit
-
-
--------------------------------------------------------------------------------------
 - GIT
 -------------------------------------------------------------------------------------
 For a new directory:
