@@ -44,3 +44,7 @@ If you can view your repository on Github, then it has been successfully created
 
 See Pro Git: Fetching and Pulling from Your Remotes
 
+-----------------------------------------------------------------------------------
+- VIM
+-----------------------------------------------------------------------------------
+Use VIM command to format JSON: :%!python -m json.tool
