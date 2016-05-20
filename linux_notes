@@ -52,3 +52,9 @@ Use VIM command to format JSON: :%!python -m json.tool
 Set line numbers and set tabs to be 3 spaces. Add the following to .vimrc
 set number
 set tabstop=3 shiftwidth=4 expandtab
+
+-----------------------------------------------------------------------------------
+- NMAP
+-----------------------------------------------------------------------------------
+To see which hosts are up, uses Ping Scan:
+nmap -sP 192.168.0.0/24
