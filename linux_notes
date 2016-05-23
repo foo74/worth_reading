@@ -58,3 +58,11 @@ set tabstop=3 shiftwidth=4 expandtab
 -----------------------------------------------------------------------------------
 To see which hosts are up, uses Ping Scan:
 nmap -sP 192.168.0.0/24
+
+-----------------------------------------------------------------------------------
+- LINUX
+-----------------------------------------------------------------------------------
+Change the size of the stack in /etc/security/limits.conf
+add line below then relog.
+<user>   soft  stack 16384
+
