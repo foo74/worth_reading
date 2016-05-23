@@ -66,3 +66,6 @@ Change the size of the stack in /etc/security/limits.conf
 add line below then relog.
 <user>   soft  stack 16384
 
+Can also increase stack size with command line.
+To see current size: ulimit -a
+To increase: ulimit -s 65536
