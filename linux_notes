@@ -69,3 +69,20 @@ add line below then relog.
 Can also increase stack size with command line.
 To see current size: ulimit -a
 To increase: ulimit -s 65536
+
+View hardware with sudo lshw   and use -C network flag to see network info.
+
+
+-----------
+- ENCRYPTION
+--------------------
+To encrypt a file:
+gpg -c --cipher-algo AES256 file_to_encrypt
+
+To decrypt a file:
+gpg file_to_encrypt.gpg
+
+To encrypt a directory, first create a zipped tar.
+tar -cvf my_secret_dir.tar my_secret_dir
+gzip my_secret_dir.tar
+gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
