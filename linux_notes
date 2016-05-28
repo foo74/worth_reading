@@ -86,3 +86,11 @@ To encrypt a directory, first create a zipped tar.
 tar -cvf my_secret_dir.tar my_secret_dir
 gzip my_secret_dir.tar
 gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
+
+
+--------------------
+- MEASURES
+-------------------
+A KiloByte (KB) is 10^3 = 1000 bytes.
+A KibiByte (KiB) is 2^10 = 1024 bytes.
+A Kilobit (Kb) is 10^3 bits = 1000 bits (but 8 bits in a byte so 1000/8 = 125 bytes).
