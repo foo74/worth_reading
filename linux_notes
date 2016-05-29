@@ -87,6 +87,8 @@ tar -cvf my_secret_dir.tar my_secret_dir
 gzip my_secret_dir.tar
 gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
 
+Restart WIFI:
+sudo systemctl restart network-manager.service
 
 --------------------
 - MEASURES
