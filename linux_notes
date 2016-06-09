@@ -72,6 +72,13 @@ To increase: ulimit -s 65536
 
 View hardware with sudo lshw   and use -C network flag to see network info.
 
+When installing from autotools.. can specify prefix on configure script:
+./configure --prefix=/home/foo/whee
+make
+make install
+
+This will put in /home/foo/whee/bin/<prog>
+
 
 -----------
 - ENCRYPTION
@@ -96,3 +103,5 @@ sudo systemctl restart network-manager.service
 A KiloByte (KB) is 10^3 = 1000 bytes.
 A KibiByte (KiB) is 2^10 = 1024 bytes.
 A Kilobit (Kb) is 10^3 bits = 1000 bits (but 8 bits in a byte so 1000/8 = 125 bytes).
+
+
