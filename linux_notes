@@ -97,6 +97,9 @@ gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
 Restart WIFI:
 sudo systemctl restart network-manager.service
 
+To hash a file (one way hash):
+gpg --print-md sha512 filename
+
 --------------------
 - MEASURES
 -------------------
