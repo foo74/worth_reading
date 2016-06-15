@@ -60,14 +60,6 @@ To see which hosts are up, uses Ping Scan:
 nmap -sP 192.168.0.0/24
 
 -----------------------------------------------------------------------------------
-- C PROGRAMMING
------------------------------------------------------------------------------------
-/usr/include is where GNU Library C (glibc) is located. Glibc is the GNU implementation
-of the Standard C Library.
-
-To see the search path. Compile with the -v flag to see include dirs.
-
------------------------------------------------------------------------------------
 - LINUX
 -----------------------------------------------------------------------------------
 Change the size of the stack in /etc/security/limits.conf
@@ -80,14 +72,8 @@ To increase: ulimit -s 65536
 
 View hardware with sudo lshw   and use -C network flag to see network info.
 
-When installing from autotools.. can specify prefix on configure script:
-./configure --prefix=/home/foo/whee
-make
-make install
-
-This will put in /home/foo/whee/bin/<prog>
-
-
+Restart WIFI:
+sudo systemctl restart network-manager.service
 
 
 -----------
@@ -104,11 +90,6 @@ tar -cvf my_secret_dir.tar my_secret_dir
 gzip my_secret_dir.tar
 gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
 
-Restart WIFI:
-sudo systemctl restart network-manager.service
-
-To hash a file (one way hash):
-gpg --print-md sha512 filename
 
 --------------------
 - MEASURES
@@ -116,5 +97,3 @@ gpg --print-md sha512 filename
 A KiloByte (KB) is 10^3 = 1000 bytes.
 A KibiByte (KiB) is 2^10 = 1024 bytes.
 A Kilobit (Kb) is 10^3 bits = 1000 bits (but 8 bits in a byte so 1000/8 = 125 bytes).
-
-
