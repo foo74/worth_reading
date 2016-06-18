@@ -93,6 +93,15 @@ tar -cvf my_secret_dir.tar my_secret_dir
 gzip my_secret_dir.tar
 gpg -c --cipher-algo AES256 my_secret_dir.tar.gz
 
+To import a key:
+gpg --keyserver <key_server> --recv <key_id>
+Example:
+gpg --keyserver keyring.debian.org --recv 6294BE9B
+
+To check a signature:
+gpg --verify doc.sign doc
+Example:
+gpg --verify SHA512SUMS.sign SHA512SUMS
 
 --------------------
 - MEASURES
