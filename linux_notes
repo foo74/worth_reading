@@ -75,6 +75,9 @@ View hardware with sudo lshw   and use -C network flag to see network info.
 Restart WIFI:
 sudo systemctl restart network-manager.service
 
+Create a disk for virtualbox:
+vboxmanage createhd --filename test2disk.vdi --size 100 --variant fixed
+
 
 -----------
 - ENCRYPTION
