@@ -78,6 +78,10 @@ sudo systemctl restart network-manager.service
 Create a disk for virtualbox:
 vboxmanage createhd --filename test2disk.vdi --size 100 --variant fixed
 
+Delete a disk for virtualbox:
+vboxmanage list hdds
+vboxmanage closemedium disk <uuid> --delete
+
 
 -----------
 - ENCRYPTION
