@@ -113,3 +113,35 @@ gpg --verify SHA512SUMS.sign SHA512SUMS
 A KiloByte (KB) is 10^3 = 1000 bytes.
 A KibiByte (KiB) is 2^10 = 1024 bytes.
 A Kilobit (Kb) is 10^3 bits = 1000 bits (but 8 bits in a byte so 1000/8 = 125 bytes).
+
+----------------
+- PATCHING 
+---------------
+Patches use diff and the patch tools:
+http://www.thegeekstuff.com/2014/12/patch-command-examples/ 
+
+------------------
+- FOOLINUX NOTES
+------------------
+MISC NOTES:
+First step is to just boot kernel to shell.
+
+http://unix.stackexchange.com/questions/136278/what-are-the-minimum-root-filesystem-applications-that-are-required-to-fully-boo
+https://sites.google.com/site/4utils/articles/minimal_linux_system/minimal-linux-system-from-scratch
+
+http://www.cyberciti.biz/tips/10-boot-time-parameters-you-should-know-about-the-linux-kernel.html 
+
+INIT:
+http://unix.stackexchange.com/questions/146284/minimal-linux-with-kernel-and-busybox-etc-inittab-is-ignored-only-init-is-ex
+https://wiki.openwrt.org/doc/techref/process.boot
+https://busybox.net/FAQ.html#init
+
+FSTAB:
+https://wiki.archlinux.org/index.php/fstab
+
+
+Note that systemd does NOT use the /etc/inittab file.
+
+Not sure I want to go with systemd.
+Need to learn SYSTEMD. Look at LFS for systemd for details on how it works.
+
