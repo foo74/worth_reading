@@ -145,3 +145,6 @@ Note that systemd does NOT use the /etc/inittab file.
 Not sure I want to go with systemd.
 Need to learn SYSTEMD. Look at LFS for systemd for details on how it works.
 
+Passing parameters to kernel to influence its behavior:
+https://wiki.archlinux.org/index.php/kernel_parameters
+
