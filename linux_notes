@@ -150,6 +150,9 @@ write-up for excellent coverage here.
 This is the fallback location if the EFI boot manager cannot find any .efi
 boot loaders to boot.
 Should be named bootx64.efi. See Rod's page for more info.
+- The boot loader is the first code that runs after the firmware (BIOS or UEFI) loads. For
+an excellent overview of boot loaders see rodsbooks.com or the page from Arch Linux
+located at: https://wiki.archlinux.org/index.php/Boot_loaders
 
 ------------------
 - FOOLIX LINUX NOTES
