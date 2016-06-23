@@ -131,7 +131,18 @@ topic: http://rodsbooks.com/efi-bootloaders
 
 - Create a 550MiB to guard against the MiB/MB rounding issue. See notes above.
 - Should be type GPT partition scheme and the EFI System partition type and
-of type FAT 32 and the boot flag enabled.
+of type FAT 32.
+- fdisk /dev/sdb
+- Then make a new GPT table, then a new partition that is +550MiB and of 
+type EFI System (first option type).
+- Then use mkfs.fat back in shell to create the file system as 32 bit FAT.
+mkfs.fat -F 32 /dev/sdb1
+- Then mount the ESP and make directory /EFI. Then each bootloader will
+have its own directory. Example /EFI/ubuntu or EFI/debian, etc.. As Rod
+points out many Linux systems will mount this ESP to /boot/efi so the
+result is /boot/efi/EFI/ubuntu, etc... Arch Linux users like to mount
+to /boot so the result is /boot/EFI/arch, etc... *Note that on FAT
+filesystem the case matters.
 
 ------------------
 - FOOLINUX NOTES
