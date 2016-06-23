@@ -146,11 +146,17 @@ filesystem the case matters. These bootloader directories contain the bootloader
 file that ends in .efi and also any associated files, such as the RAM DISK that
 Linux often uses to set things up as the kernel boots (initrd). Read Rod's
 write-up for excellent coverage here.
+- There is also a fallback .efi in /EFI/BOOT/bootx64.efi.
+This is the fallback location if the EFI boot manager cannot find any .efi
+boot loaders to boot.
+Should be named bootx64.efi. See Rod's page for more info.
 
 ------------------
-- FOOLINUX NOTES
+- FOOLIX LINUX NOTES
 ------------------
 MISC NOTES:
+This will be an EFI based distro for now. Need to create the /EFI/foolix directory
+on the ESP to hold the efi boot loader info.
 First step is to just boot kernel to shell.
 
 http://unix.stackexchange.com/questions/136278/what-are-the-minimum-root-filesystem-applications-that-are-required-to-fully-boo
