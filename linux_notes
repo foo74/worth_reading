@@ -116,9 +116,22 @@ A Kilobit (Kb) is 10^3 bits = 1000 bits (but 8 bits in a byte so 1000/8 = 125 by
 
 ----------------
 - PATCHING 
----------------
+----------------
 Patches use diff and the patch tools:
 http://www.thegeekstuff.com/2014/12/patch-command-examples/ 
+
+-----------------
+- UEFI
+-----------------
+Unified Extensible Firmware Interface (UEFI) is a replacement for BIOS.
+EFI was the first version, UEFI is the second version. But most people
+just say EFI and mean UEFI.
+- Best info I have found is at rodsbooks.com. In particular the 
+topic: http://rodsbooks.com/efi-bootloaders
+
+- Create a 550MiB to guard against the MiB/MB rounding issue. See notes above.
+- Should be type GPT partition scheme and the EFI System partition type and
+of type FAT 32 and the boot flag enabled.
 
 ------------------
 - FOOLINUX NOTES
