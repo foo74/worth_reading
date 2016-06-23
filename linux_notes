@@ -142,7 +142,10 @@ have its own directory. Example /EFI/ubuntu or EFI/debian, etc.. As Rod
 points out many Linux systems will mount this ESP to /boot/efi so the
 result is /boot/efi/EFI/ubuntu, etc... Arch Linux users like to mount
 to /boot so the result is /boot/EFI/arch, etc... *Note that on FAT
-filesystem the case matters.
+filesystem the case matters. These bootloader directories contain the bootloader
+file that ends in .efi and also any associated files, such as the RAM DISK that
+Linux often uses to set things up as the kernel boots (initrd). Read Rod's
+write-up for excellent coverage here.
 
 ------------------
 - FOOLINUX NOTES
