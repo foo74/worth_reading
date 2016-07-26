@@ -191,3 +191,9 @@ Need to learn SYSTEMD. Look at LFS for systemd for details on how it works.
 Passing parameters to kernel to influence its behavior:
 https://wiki.archlinux.org/index.php/kernel_parameters
 
+
+-----------------
+- SOFTWARE DEFINED RADIO (SDR)
+-----------------
+gnuradio
+gqrx
