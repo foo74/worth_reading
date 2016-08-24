@@ -89,6 +89,16 @@ vboxmanage closemedium disk <uuid> --delete
 Check version information:
 lsb_release -a
 
+Turn Off Bluetooth
+sudo systemctl stop bluetooth
+sudo systemctl disable bluetooth
+Synchronizing state of bluetooth.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install disable bluetooth
+insserv: warning: current start runlevel(s) (empty) of script `bluetooth' overrides LSB defaults (2 3 4 5).
+insserv: warning: current stop runlevel(s) (0 1 2 3 4 5 6) of script `bluetooth' overrides LSB defaults (0 1 6).
+Removed symlink /etc/systemd/system/dbus-org.bluez.service.
+
+
 
 -----------
 - ENCRYPTION
