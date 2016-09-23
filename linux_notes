@@ -98,6 +98,9 @@ insserv: warning: current start runlevel(s) (empty) of script `bluetooth' overri
 insserv: warning: current stop runlevel(s) (0 1 2 3 4 5 6) of script `bluetooth' overrides LSB defaults (0 1 6).
 Removed symlink /etc/systemd/system/dbus-org.bluez.service.
 
+Mounting a NAS
+sudo mount <IP or hostname>:/<dir> /mnt/<dir>
+sudo umount /mnt/<dir>
 
 
 -----------
