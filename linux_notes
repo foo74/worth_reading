@@ -104,6 +104,20 @@ sudo umount /mnt/<dir>
 
 
 -----------
+- IPTABLES
+-----------
+Block IP's from people trying to brute force log in.
+0. MAKE SURE MY IP IS NOT IN LASTB
+1. awk to get 3rd column from lastb. > lastb  | awk '{ print }'
+2. vim to get unique. > :sort -u
+3. while read p; do echo iptables -A INPUT -s -j DROP; done < IPs > block_them
+4. chmod 700 to block and add script as #!/bin/sh then run.
+5. Then save using   netfilter-persistent save
+6. Then clear /var/log/auth and btmp
+7. check in /etc/iptables/
+
+
+-----------
 - ENCRYPTION
 --------------------
 To encrypt a file:
