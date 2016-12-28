@@ -3,3 +3,5 @@ installpath = ftp://mirrors.syringanetworks.net/pub/OpenBSD/%c/packages/%a
 
 And set networking with /etc/hostname.<interface>
 inet 172.16.0.1 255.240.0.0
+
+Set prompt in .kshrc file. Pick with working directory but remove ! which is the command count.
