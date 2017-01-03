@@ -128,7 +128,7 @@ rsync -e "ssh -i /home/foo/.ssh/<private key>" -t myfiles.* <server_name>:<dest_
 - ENCRYPTION
 --------------------
 
-openssl aes-256-cbc -a -salt -in foo.text -out foo.enc
+openssl aes-256-cbc -e -a -salt -in foo.text -out foo.enc
 openssl aes-256-cbc -d -a -in foo.enc -out foo.new
 
 Notes on GPG...
@@ -236,8 +236,3 @@ https://wiki.archlinux.org/index.php/kernel_parameters
 -----------------
 gnuradio
 gqrx
-<<<<<<< HEAD
-=======
-openssl aes-256-cbc -e -a -salt -in foo.text -out foo.enc
-openssl aes-256-cbc -d -a -in foo.enc -out foo.new
->>>>>>> 310609369d193adec9bbe61021446dd166177ad2
