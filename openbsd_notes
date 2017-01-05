@@ -14,6 +14,9 @@ inet 172.16.0.1 255.240.0.0
 To check out source code: http://www.bsdnow.tv/tutorials/patching-obsd
 
 Learn about man page authoring: man mdoc
+
+Create a patch: cvs diff a_file.c > mypatch.diff
+
 ====================================================================================================================================
 
 Set prompt in .kshrc file. Pick with working directory but remove ! which is the command count.
