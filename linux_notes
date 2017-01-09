@@ -121,6 +121,8 @@ Block IP's from people trying to brute force log in.
 - BACKUPS WITH RSYNC and SSH
 ---------------
 
+ssh-agent
+ssh-add <path-to-private-key>
 rsync -e "ssh -i /home/foo/.ssh/<private key>" -t myfiles.* <server_name>:<dest_foler>/
 
 
