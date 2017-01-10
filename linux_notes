@@ -44,6 +44,13 @@ If you can view your repository on Github, then it has been successfully created
 
 See Pro Git: Fetching and Pulling from Your Remotes
 
+
+-----------------------------------------------------------------------------------
+- C PROGRAMMING
+-----------------------------------------------------------------------------------
+To see the ... and <> include search path. Run gcc -v -E hello.c
+
+
 -----------------------------------------------------------------------------------
 - VIM
 -----------------------------------------------------------------------------------
