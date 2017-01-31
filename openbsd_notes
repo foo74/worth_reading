@@ -125,3 +125,32 @@ XTerm*faceSize:10
 cwm
 
 ###END###
+
+
+
+#######################################
+# Installing from a USB thumb drive
+#######################################
+
+To install OpenBSD using a USB thumb drive.
+
+Step 1: Download the install<version>.fs, also depicted as install*.fs, file 
+from http://ftp.openbsd.org/pub/OpenBSD/<version>/<architecture> or from the 
+closest mirror.
+
+Step 2: Verify the SHA256 signature. Look for the file SHA256. Run the SHA256SUM 
+on the file and compare with the number listed in the SHA256 file.
+   sha356sum install*.fs
+
+Step 3: Validate the cryptographic signature using signify program. If on Ubuntu 
+you can install signify-openbsd (apt-get install signify-openbsd). The .pub key is 
+found in the CVS. You can browse it at: http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/etc/signify.
+The SHA256.sig file is in the same directory where you downloaded the install60.fs file. 
+Then run command:
+   signify-openbsd -Cp ./base_key.pub -x SHA256.sig install60.fs  
+
+Step 4: Copy the install60.fs to the USB drive using dd command. The following assumes 
+the USB device is at /dev/rsd6c. See my other post on mounting microSD.
+   dd if=/location/install*.fs of=/dev/rsd6c bs=1m
+
+###END###
