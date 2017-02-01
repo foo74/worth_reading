@@ -50,7 +50,7 @@ See Pro Git: Fetching and Pulling from Your Remotes
 - C PROGRAMMING
 -----------------------------------------------------------------------------------
 Make a hashed passowrd using the front-end for crypt.
-mkpasswd -m sha-512
+mkpasswd -m sha-512 -S "This is my salt"
 
 
 
