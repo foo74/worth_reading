@@ -45,6 +45,15 @@ If you can view your repository on Github, then it has been successfully created
 See Pro Git: Fetching and Pulling from Your Remotes
 
 
+
+-----------------------------------------------------------------------------------
+- C PROGRAMMING
+-----------------------------------------------------------------------------------
+Make a hashed passowrd using the front-end for crypt.
+mkpasswd -m sha-512
+
+
+
 -----------------------------------------------------------------------------------
 - C PROGRAMMING
 -----------------------------------------------------------------------------------
