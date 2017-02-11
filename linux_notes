@@ -149,6 +149,9 @@ rsync -e "ssh -i /home/foo/.ssh/<private key>" -t myfiles.* <server_name>:<dest_
 openssl aes-256-cbc -e -a -salt -in foo.text -out foo.enc
 openssl aes-256-cbc -d -a -in foo.enc -out foo.new
 
+Create a strong ssh key:
+ssh-keygen -b 8192 -f ~/.ssh/my_strong_key -C my_comment -o -a 1000
+
 Notes on GPG...
 To encrypt a file:
 gpg -c --cipher-algo AES256 file_to_encrypt
