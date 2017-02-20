@@ -267,3 +267,10 @@ Problem is when it is from ubuntu.
 # mount -t ext4 /dev/sdb1 /mnt
 # hdparm -r0 /dev/sdb
 # mount -t ext4 -o remount,rw /mnt
+
+
+
+-----------------
+- Convert LibreWriter from ODT to TXT
+-----------------
+soffice --headless --convert-to txt:Text my_notes.odt
