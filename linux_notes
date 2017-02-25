@@ -274,3 +274,12 @@ Problem is when it is from ubuntu.
 - Convert LibreWriter from ODT to TXT
 -----------------
 soffice --headless --convert-to txt:Text my_notes.odt
+
+
+
+-----------------
+- Notes on scanning documents.
+-----------------
+scanimage --help -d dsseries:usb:0x04F9:0x60E0
+scanimage -d dsseries:usb:0x04F9:0x60E0 -x 215.9 -y 279.4 --source Duplex --resolution 100 --format=tiff -b
+convert file1.tif ~/file1.jpg
