@@ -283,3 +283,18 @@ soffice --headless --convert-to txt:Text my_notes.odt
 scanimage --help -d dsseries:usb:0x04F9:0x60E0
 scanimage -d dsseries:usb:0x04F9:0x60E0 -x 215.9 -y 279.4 --source Duplex --resolution 100 --format=tiff -b
 convert file1.tif ~/file1.jpg
+
+
+
+-----------------
+- Notes on adding a udev rule that fires and USB is inserted.
+-----------------
+cat /etc/udev/rules.d/10-local.rules
+ACTION=="add", RUN+="/lib/udev/hello.sh"
+
+cat /lib/udev/hello.sh
+#!/bin/bash
+# An example of writing something.
+echo HELLO > /home/krw/udev_test_log.txt
+# An example of removing something.
+rm /home/krw/delete_me
